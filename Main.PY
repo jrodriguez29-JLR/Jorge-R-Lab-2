@@ -1,9 +1,14 @@
-x = 22
+import random
 
-if x < 21:
-    print('why')
 
-elif x > 21:
-    print('again')
+game_number = random.randint (1,10)
+print (game_number)
+
+guess =  int(input('Enter a number between 1 and 10: '))
+
+if guess > game_number:
+    print('Too high')
+elif guess < game_number:
+    print ('Too low')
 else:
-    print('send me back')
+    print('You win!')
